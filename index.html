@@ -4678,7 +4678,7 @@ userHasEditedRef.current = false;
                 recursosExtraidos += `\n\nSUGERENCIA DE MATERIAL WEB:\n🌐 ${enlaceAsignado}`;
             }
 
-            // 3. GENERACIÓN DE LAS PREGUNTAS ESTRUCTURADAS
+                        // 3. GENERACIÓN DE LAS PREGUNTAS ESTRUCTURADAS
             const q1 = arrAnalisis[idx % arrAnalisis.length].replace(/
 TEMA
 /g, contenido.toLowerCase());
@@ -4699,6 +4699,7 @@ TEMA
 /g, contenido.toLowerCase());
 
             let htmlEstructura = `
+
                 <div style="font-family: 'Segoe UI', Arial, sans-serif; display: flex; flex-direction: column; gap: 16px; margin-top: 15px;">
                     <div style="border: 1px solid #4caf50; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(76,175,80,0.1);">
                         <div style="background: #e8f5e9; padding: 8px 12px; color: #1b5e20; font-weight: bold; font-size: 11px; border-bottom: 1px solid #c8e6c9; display: flex; align-items: center; gap: 6px;">
