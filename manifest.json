@@ -1,0 +1,15 @@
+{
+  "name": "Gestión Escolar - Marina de Chile",
+  "short_name": "Marina Gestión",
+  "description": "Plataforma de gestión curricular, cronogramas, planificaciones y evaluaciones del Colegio Marina de Chile.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fff7ed",
+  "theme_color": "#134e4a",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
