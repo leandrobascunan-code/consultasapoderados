@@ -1183,7 +1183,12 @@
       });
     }).catch(function () { });
     var recargado = false;
-    navigator.serviceWorker.addEventListener("controllerchange", function () { if (!recargado) { recargado = true; location.reload(); } });
+    navigator.serviceWorker.addEventListener("controllerchange", function () {
+      if (recargado) return; recargado = true;
+      // Si no hay una conversación en curso, se recarga sola; si la hay, se ofrece actualizar sin perderla de golpe
+      if (!estado.mensajes.length) location.reload();
+      else toast("Hay una versión nueva de la app", 0, { texto: "Actualizar", fn: function () { location.reload(); } });
+    });
   }
 
   // Nueva consulta: limpia la conversación (se mantiene el rol elegido)

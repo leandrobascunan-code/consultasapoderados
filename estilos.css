@@ -115,7 +115,15 @@ svg{width:1.15em;height:1.15em;vertical-align:-.2em;flex:none}
 .contenido h3.titulo-profundizar,.contenido h2.titulo-profundizar,.contenido h4.titulo-profundizar{margin-top:18px;padding-top:12px;border-top:1px dashed var(--borde)}
 .opciones-ia{background:rgba(30,79,163,.06);border:1px solid var(--borde);border-radius:14px;padding:4px 12px 10px;margin-top:6px}
 .opciones-ia .pregunta-opc{margin-top:12px}
-.firma{margin:3px 0 0;font-size:.64rem;text-align:center;color:rgba(255,255,255,.7);letter-spacing:.2px}
+.firma{margin:4px 0 0;font-size:.64rem;color:rgba(255,255,255,.78);letter-spacing:.2px;display:flex;align-items:center;justify-content:center;gap:6px}
+.firma img{height:24px;width:auto;opacity:.92}
+.firma b{font-weight:800;letter-spacing:.4px}
+.firma-clara{display:flex;align-items:center;justify-content:center;gap:8px;font-size:.74rem;color:var(--texto-suave);margin:0 0 14px}
+.firma-clara img{height:30px;width:auto}
+.firma-clara b{color:var(--marino);font-weight:900;letter-spacing:.4px}
+:root[data-theme="dark"] .firma-clara img{filter:brightness(0) invert(1);opacity:.85}
+:root[data-theme="dark"] .firma-clara b{color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .firma-clara img{filter:brightness(0) invert(1);opacity:.85}:root:not([data-theme="light"]) .firma-clara b{color:#fff}}
 .mascota.saluda{animation:saludo 2.4s ease-in-out infinite}
 @keyframes saludo{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 
